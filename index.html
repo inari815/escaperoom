@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Escape Room</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="game-container">
+    <h1>Escape Room</h1>
+    <p id="story-text">Je zit opgesloten in een kamer. Ontsnap door de puzzels op te lossen!</p>
+
+    <div id="puzzle-container">
+      <div id="puzzle1" class="puzzle">
+        <p>Puzzel 1: Het getal is het jaar waarin de eerste computer werd uitgevonden.</p>
+        <input type="text" id="answer1" placeholder="Vul je antwoord in">
+        <button onclick="checkAnswer(1)">Controleer</button>
+      </div>
+
+      <div id="puzzle2" class="puzzle hidden">
+        <p>Puzzel 2: Hoeveel hoeken heeft een regelmatige achthoek?</p>
+        <input type="text" id="answer2" placeholder="Vul je antwoord in">
+        <button onclick="checkAnswer(2)">Controleer</button>
+      </div>
+
+      <div id="puzzle3" class="puzzle hidden">
+        <p>Puzzel 3: Vind de verborgen sleutel in de afbeelding!</p>
+        <div id="image-container">
+          <img src="https://via.placeholder.com/300x200" alt="Zoek de sleutel" id="game-image">
+        </div>
+        <button onclick="findKey()">Klik hier als je de sleutel hebt gevonden</button>
+      </div>
+    </div>
+
+    <p id="final-message" class="hidden">Gefeliciteerd, je hebt de Escape Room voltooid!</p>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
