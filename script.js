@@ -4,7 +4,9 @@ let currentPuzzle = 1;
 const answers = {
   1: "1943", // Eerste computer
   2: "8",    // Hoeken van een achthoek
-  3: "3600"  // Seconden in een uur
+  3: "3600", // Seconden in een uur
+  4: "12",   // Vierkantswortel van 144
+  5: "100"   // Som van 45 en 55
 };
 
 // Controleer antwoorden
@@ -28,11 +30,4 @@ function nextPuzzle() {
   } else {
     document.getElementById("final-message").classList.remove("hidden");
   }
-}
-
-// Voor de puzzel met de afbeelding
-function findKey() {
-  alert("Je hebt de sleutel gevonden! Je hebt de kamer verlaten.");
-  document.getElementById("puzzle4").classList.add("hidden");
-  document.getElementById("final-message").classList.remove("hidden");
 }

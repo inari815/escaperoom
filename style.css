@@ -44,13 +44,4 @@ body {
   .hidden {
     display: none;
   }
-  
-  #image-container {
-    position: relative;
-  }
-  
-  #game-image {
-    width: 100%;
-    cursor: pointer;
-  }
-  
+   
