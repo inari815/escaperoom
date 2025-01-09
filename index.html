@@ -12,27 +12,37 @@
     <p id="story-text">Je zit opgesloten in een kamer. Ontsnap door de puzzels op te lossen!</p>
 
     <div id="puzzle-container">
+      <!-- Puzzle 1 -->
       <div id="puzzle1" class="puzzle">
-        <p>Puzzel 1: Het getal is het jaar waarin de eerste computer werd uitgevonden.</p>
+        <p>Puzzel 1: Het jaar waarin de eerste computer werd uitgevonden.</p>
         <input type="text" id="answer1" placeholder="Vul je antwoord in">
         <button onclick="checkAnswer(1)">Controleer</button>
       </div>
 
+      <!-- Puzzle 2 -->
       <div id="puzzle2" class="puzzle hidden">
         <p>Puzzel 2: Hoeveel hoeken heeft een regelmatige achthoek?</p>
         <input type="text" id="answer2" placeholder="Vul je antwoord in">
         <button onclick="checkAnswer(2)">Controleer</button>
       </div>
 
+      <!-- Puzzle 3 -->
       <div id="puzzle3" class="puzzle hidden">
-        <p>Puzzel 3: Vind de verborgen sleutel in de afbeelding!</p>
+        <p>Puzzel 3: Hoeveel seconden zitten er in een uur?</p>
+        <input type="text" id="answer3" placeholder="Vul je antwoord in">
+        <button onclick="checkAnswer(3)">Controleer</button>
+      </div>
+
+      <!-- Puzzle 4 -->
+      <div id="puzzle4" class="puzzle hidden">
+        <p>Puzzel 4: Vind de verborgen sleutel in de afbeelding!</p>
         <div id="image-container">
-          <img src="https://via.placeholder.com/300x200" alt="Zoek de sleutel" id="game-image">
+          <img src="https://via.placeholder.com/300x200" alt="Zoek de sleutel" id="game-image" onclick="findKey()">
         </div>
-        <button onclick="findKey()">Klik hier als je de sleutel hebt gevonden</button>
       </div>
     </div>
 
+    <!-- Final Message -->
     <p id="final-message" class="hidden">Gefeliciteerd, je hebt de Escape Room voltooid!</p>
   </div>
 
