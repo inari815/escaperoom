@@ -6,13 +6,18 @@ const answers = {
   2: "8",    // Hoeken van een achthoek
   3: "3600", // Seconden in een uur
   4: "12",   // Vierkantswortel van 144
-  5: "100"   // Som van 45 en 55
+  5: "100",  // Som van 45 en 55
+  6: "12",   // Aantal maanden in een schrikkeljaar
+  7: "Parijs", // Hoofdstad van Frankrijk
+  8: "Burj Khalifa", // Hoogste gebouw ter wereld
+  9: "Leonardo da Vinci", // Schilder van de Mona Lisa
+  10: "1945"  // Jaar waarin de Tweede Wereldoorlog eindigde
 };
 
 // Controleer antwoorden
 function checkAnswer(puzzleNumber) {
-  const answer = document.getElementById(`answer${puzzleNumber}`).value.trim();
-  if (answer === answers[puzzleNumber]) {
+  const answer = document.getElementById(`answer${puzzleNumber}`).value.trim().toLowerCase();
+  if (answer === answers[puzzleNumber].toLowerCase()) {
     alert("Goed gedaan! Je hebt deze puzzel opgelost.");
     nextPuzzle();
   } else {
